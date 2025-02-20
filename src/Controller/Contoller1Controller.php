@@ -10,7 +10,7 @@ final class Contoller1Controller extends AbstractController
 {
     #[Route('/contoller1', name: 'app_contoller1')]
     public function index(): Response
-    {
+    {   die("Je suis la requête /controller1");
         return $this->render('contoller1/index.html.twig', [
             'controller_name' => 'Contoller1Controller',
         ]);
